@@ -1,13 +1,4 @@
-# Gatsby Theme Console
+# About
+This repo contains the code of my [portfolio/personal website](https://sandeshghanta.github.io)
 
-Inspired from [Jekyll Theme Console](https://github.com/b2a3e8/jekyll-theme-console)
-
-## :bulb: Installation Instructions
-
-1. Fork the Repo.
-2. git clone https://github.com/yourusername/gatsby-theme-console.git
-3. npm install
-4. Get the google analytics tracking id and paste it in `src/gatsby-config.js`
-4. npm start
-
-You started you development server at `http://localhost:8000/`.
+Thanks to @Harshithpabbati for helping me create a personalised version of his [repo](https://github.com/harshithpabbati/gatsby-theme-console)
