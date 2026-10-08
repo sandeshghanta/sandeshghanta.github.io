@@ -14,7 +14,7 @@ Nov 2024 – now
 : Scale AI — Software Developer, AI Infra
 
 Jan 2023 – Nov 2024
-: Pure Storage — Software Engineer, Filesystem
+: Pure Storage — Software Engineer, Filesystem team
 
 Jun 2022 – Aug 2022
 : NetApp — Software Engineer Intern

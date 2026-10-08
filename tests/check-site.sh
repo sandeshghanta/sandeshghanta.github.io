@@ -137,7 +137,7 @@ has "$H" "I like most things in computers and programming, especially distribute
 has "$H" "<dl>"
 has "$H" "<dt>Nov 2024 – now</dt>"
 has "$H" "Scale AI — Software Developer, AI Infra"
-has "$H" "Pure Storage — Software Engineer, Filesystem"
+has "$H" "Pure Storage — Software Engineer, Filesystem team"
 has "$H" "NetApp — Software Engineer Intern"
 has "$H" "Secure Trusted and Applied Microelectronics, ASU — Graduate Research Assistant"
 has "$H" "Amazon — Software Development Engineer, Prime Video"
