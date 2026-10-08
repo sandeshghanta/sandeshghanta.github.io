@@ -2,7 +2,7 @@
 
 My personal site: a minimal CV, a runtime-log (notes) and a reading list.
 Built with [Zola](https://www.getzola.org) and deployed to GitHub Pages by
-GitHub Actions on every push to `master`.
+GitHub Actions on every push to `main`.
 
 ## Develop
 
