@@ -1,0 +1,122 @@
+// Console look carried over from the Gatsby site.
+$fg: #000
+$bg: #fff
+$muted: #555
+
+body
+  background-color: $bg
+  color: $fg
+  font-family: 'Lato', sans-serif
+  line-height: 1.5
+  margin: 0
+
+a
+  color: $fg
+
+.content-wrapper
+  width: 90%
+  max-width: 1000px
+  margin: 0 auto
+
+header
+  margin-top: 25px
+  margin-bottom: 10px
+
+.menu
+  border-top: dashed 1px $fg
+  border-bottom: dashed 1px $fg
+  margin-bottom: 25px
+
+  ul
+    list-style: none
+    margin: 12px 0
+    padding: 0
+    text-align: right
+
+  li
+    display: inline
+    margin-left: 10px
+    font-size: 16px
+
+  li.home
+    float: left
+    margin-left: 0
+
+  a
+    text-decoration: none
+    color: $fg
+
+    &:hover
+      background-color: $fg
+      color: $bg
+
+.footer
+  border-top: dashed 1px $fg
+  margin: 20px auto 15px
+  padding-top: 10px
+  text-align: right
+  font-size: 14px
+
+.list
+  font-size: 16px
+  padding-left: 40px
+
+  li
+    padding: .25rem
+
+  a
+    text-decoration: none
+    color: $fg
+
+    &:hover
+      background-color: $fg
+      color: $bg
+
+.badge
+  display: inline-block
+  margin-left: .25rem
+  padding: .35em .5em
+  font-size: 75%
+  font-weight: 700
+  line-height: 1
+  white-space: nowrap
+  border-radius: .25rem
+  color: $bg !important
+  background-color: #343a40
+  text-decoration: none
+
+// CV rows: dates column + text column, stacked on narrow screens.
+.cv dl
+  display: grid
+  grid-template-columns: 11rem 1fr
+  gap: .25rem 1rem
+  margin: 0
+
+.cv dt
+  color: $muted
+
+.cv dd
+  margin: 0
+
+@media (max-width: 600px)
+  .cv dl
+    grid-template-columns: 1fr
+    gap: 0
+
+  .cv dd
+    margin-bottom: .5rem
+
+.content
+  text-align: justify
+
+  a
+    text-decoration: underline
+
+  .meta
+    color: $muted
+
+pre.giallo
+  padding: 1rem
+  overflow-x: auto
+  border-radius: .25rem
+  background-color: #f6f8fa !important

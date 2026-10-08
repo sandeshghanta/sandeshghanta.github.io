@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{{ config.description }}">
+  <link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  {% block head %}{% endblock head %}
+  {% if config.extra.goatcounter_code %}
+  <script data-goatcounter="https://{{ config.extra.goatcounter_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {% endif %}
+</head>
+<body>
+  <div class="content-wrapper">
+    <header>
+      <nav class="menu">
+        <ul>
+          <li class="home"><a href="{{ get_url(path='@/_index.md') }}">/home</a></li>
+          <li><a href="{{ get_url(path='@/runtime-log/_index.md') }}">/runtime-log</a></li>
+          <li><a href="{{ get_url(path='@/reading.md') }}">/reading</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+    <footer class="footer">built with <a href="https://www.getzola.org">Zola</a></footer>
+  </div>
+</body>
+</html>

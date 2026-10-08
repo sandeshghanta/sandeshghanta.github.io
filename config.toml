@@ -1,0 +1,29 @@
+base_url = "https://sandeshghanta.github.io"
+title = "Sandesh Ghanta"
+description = "Sandesh Ghanta: software engineer. CV, runtime-log and reading list."
+default_language = "en"
+compile_sass = true
+build_search_index = false
+generate_feeds = false
+taxonomies = [{ name = "tags" }]
+
+[markdown]
+render_emoji = true
+definition_list = true
+
+[markdown.highlighting]
+theme = "github-light"
+
+[extra]
+author = "Sandesh Ghanta"
+email = "sghanta05@gmail.com"
+# GoatCounter site code (the "xyz" in xyz.goatcounter.com). Empty = no analytics.
+goatcounter_code = ""
+links = [
+  { name = "GitHub", url = "https://github.com/sandeshghanta" },
+  { name = "LinkedIn", url = "https://www.linkedin.com/in/sandeshghanta/" },
+  { name = "Codeforces", url = "https://codeforces.com/profile/sandeshghanta" },
+  { name = "Codechef", url = "https://www.codechef.com/users/sandeshghanta" },
+  { name = "Instagram", url = "https://www.instagram.com/sandeshghanta/" },
+  { name = "Facebook", url = "https://www.facebook.com/sandesh.ghanta/" },
+]

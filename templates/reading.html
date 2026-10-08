@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}reading | {{ config.title }}{% endblock title %}
+{% block content %}
+{% set data = load_data(path="data/reading.toml") %}
+{% set items = data?.items or [] %}
+<h4>reading</h4>
+{% if items %}
+<ul class="list">
+  {% for item in (items | sort(attribute="date"))[::-1] %}<li>[{{ item.date }}] [{{ item.kind }}] <a href="{{ item.url }}">{{ item.title }}</a>{% if item.note %}: {{ item.note }}{% endif %}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Nothing here yet.</p>
+{% endif %}
+{% endblock content %}

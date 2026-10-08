@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}#{{ term.name }} | {{ config.title }}{% endblock title %}
+{% block content %}
+<h4>runtime-log with tag: {{ term.name }}</h4>
+<ul class="list">
+  {% for p in term.pages %}<li>{{<post_entry page={p} />}}</li>
+  {% endfor %}
+</ul>
+<p><a href="{{ get_url(path='@/runtime-log/_index.md') }}">all posts</a></p>
+{% endblock content %}

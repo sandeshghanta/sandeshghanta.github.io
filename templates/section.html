@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}runtime-log | {{ config.title }}{% endblock title %}
+{% block content %}
+<h4>Tags</h4>
+{% set tags = get_taxonomy(kind="tags") %}
+<p>{% for term in tags.items %}<a class="badge" href="{{ term.permalink | safe }}">{{ term.name }}</a>{% endfor %}</p>
+<h4>runtime-log</h4>
+<ul class="list">
+  {% for p in section.pages %}<li>{{<post_entry page={p} />}}</li>
+  {% endfor %}
+</ul>
+{% endblock content %}

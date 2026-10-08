@@ -1,0 +1,9 @@
+# Things worth reading. Newest first on the page (sorted by date).
+# kind: blog | tweet | paper | video | talk     note: optional one-liner
+
+[[items]]
+date = 2026-10-07
+kind = "blog"
+title = "Dan Luu"
+url = "https://danluu.com/"
+note = "Example entry. Replace with your own."

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="cv">{{ section.content | safe }}</div>
+
+<h4>Elsewhere</h4>
+<p>
+  {% for link in config.extra.links %}<a href="{{ link.url }}">{{ link.name }}</a> · {% endfor %}<a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+</p>
+
+{% set log = get_section(path="runtime-log/_index.md") %}
+{% set latest = log.pages | first %}
+{% if latest %}
+<h4>Latest from runtime-log</h4>
+<ul class="list">
+  <li>{{<post_entry page={latest} />}}</li>
+</ul>
+{% endif %}
+{% endblock content %}

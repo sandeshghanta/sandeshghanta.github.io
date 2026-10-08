@@ -1,0 +1,6 @@
+{% component post_entry(page) %}<a href="{{ page.permalink | safe }}">[{% if page.updated %}{{ page.updated }}{% else %}{{ page.date }}{% endif %}]: {{ page.title }}</a>{% for tag in page.taxonomies?.tags or [] %} <a class="badge" href="{{ get_taxonomy_url(kind='tags', name=tag) | safe }}">{{ tag }}</a>{% endfor %}{% endcomponent post_entry %}
+
+{# Math for posts: {% <math> %}…{% </math> %} (display) or {% <math inline={true}> %}…{% </math> %}.
+   LaTeX characters Markdown would eat (\ _ * `) are emitted as entities, which Markdown keeps as plain
+   text; the browser decodes them and KaTeX auto-render (templates/page.html) renders the $/$$ span. #}
+{% component math(inline=false) %}{%- set d = "$" if inline else "$$" -%}{{ d }}{{ body | escape_html | replace(from="\\", to="&#92;") | replace(from="_", to="&#95;") | replace(from="*", to="&#42;") | replace(from="`", to="&#96;") | safe }}{{ d }}{% endcomponent math %}
